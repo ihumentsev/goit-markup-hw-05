@@ -110,7 +110,6 @@ header .conteiner {
 }
 .nav-link:hover,:focus {
     color: var(--accent-color);
-    
 }
 
 .active-page {
@@ -199,8 +198,8 @@ fill: currentColor;
 .hero-btn {
     width: 200px;
     height: 50px;
+    background-color: var(--accent-color);
     color: var(--next-text-color);
-    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -211,7 +210,12 @@ fill: currentColor;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
-
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+    color: var(--next-text-color);
+    
+}
 /* Секция особенности */
 
 .feature {
@@ -414,13 +418,13 @@ fill: currentColor;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
-
 }
 
 .clients-link:hover,
 .clients-link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
+    
 }
 
 .clients-icon {
@@ -514,9 +518,7 @@ fill: currentColor;
 .project-description {
     padding: 24px 20px;
 }
-.project-img {
-    margin-bottom: 20px;
- }
+.project-img {}
 
 .project-text {
     font-size: 16px;
